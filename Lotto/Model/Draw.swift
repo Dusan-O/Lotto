@@ -7,7 +7,7 @@
 
 import Foundation
 
-// MARK : DRAW
+// MARK: - DRAW
 
 struct Draw { /// Tirages
     let count: Int /// Number of draw (tirages)

@@ -8,9 +8,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+// MARK: IBOutlet
     @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var playButton: UIButton!
+    
+    let lottoCount = 6
+    let lottoRange = 1...49
     
     fileprivate func setupUI() {
         /// Change btn GO cornerRadius
@@ -25,11 +29,33 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupUI()()
-    }
-
-    @IBAction func playAction(_ sender: Any) {
+        setupUI()
     }
     
+// MARK: IBAction
+    @IBAction func playAction(_ sender: Any) {
+        // lottoDraw is not nil, si debug mode it will go throug assertionFailure, then crash, if no debug mode, assertionFailure won't do anything
+        
+        guard let lottoDraw = Draw(count: lottoCount, range: lottoRange) else {
+            assertionFailure("Invalid lotto parameters")
+            return
+        }
+    // Recuperate labels from StackView
+        let labels = stackView.arrangedSubviews.compactMap { item in
+            item.subviews.first as? UILabel
+        }
+    // number of result lottoDrow == number of result label
+//        guard lottoCount == labels.count else {
+//            assertionFailure("Lotto parameters and Stack View are inconsistent")
+//            return
+//        }
+        // Sequence containes coulples labels and result
+        let list = zip(labels, lottoDraw.result)
+        list.forEach { item in
+            let label = item.0
+            let value = item.1
+            label.text = String(value)
+        }
+    }
 }
 
