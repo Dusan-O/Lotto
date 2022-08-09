@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupUI()
+        setupUI()()
     }
 
     @IBAction func playAction(_ sender: Any) {

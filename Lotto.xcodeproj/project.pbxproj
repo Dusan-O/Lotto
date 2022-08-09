@@ -16,6 +16,7 @@
 		2FB3FA8528A27F3100435D5E /* LottoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB3FA8428A27F3100435D5E /* LottoTests.swift */; };
 		2FB3FA8F28A27F3100435D5E /* LottoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB3FA8E28A27F3100435D5E /* LottoUITests.swift */; };
 		2FB3FA9128A27F3100435D5E /* LottoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB3FA9028A27F3100435D5E /* LottoUITestsLaunchTests.swift */; };
+		2FB3FA9F28A3137900435D5E /* Draw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB3FA9E28A3137900435D5E /* Draw.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		2FB3FA8A28A27F3100435D5E /* LottoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LottoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FB3FA8E28A27F3100435D5E /* LottoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoUITests.swift; sourceTree = "<group>"; };
 		2FB3FA9028A27F3100435D5E /* LottoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2FB3FA9E28A3137900435D5E /* Draw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Draw.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		2FB3FA6C28A27F2E00435D5E /* Lotto */ = {
 			isa = PBXGroup;
 			children = (
+				2FB3FA9D28A3136300435D5E /* Model */,
 				2FB3FA6D28A27F2E00435D5E /* AppDelegate.swift */,
 				2FB3FA6F28A27F2E00435D5E /* SceneDelegate.swift */,
 				2FB3FA7128A27F2E00435D5E /* ViewController.swift */,
@@ -125,6 +128,14 @@
 				2FB3FA9028A27F3100435D5E /* LottoUITestsLaunchTests.swift */,
 			);
 			path = LottoUITests;
+			sourceTree = "<group>";
+		};
+		2FB3FA9D28A3136300435D5E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2FB3FA9E28A3137900435D5E /* Draw.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +272,7 @@
 				2FB3FA7228A27F2E00435D5E /* ViewController.swift in Sources */,
 				2FB3FA6E28A27F2E00435D5E /* AppDelegate.swift in Sources */,
 				2FB3FA7028A27F2E00435D5E /* SceneDelegate.swift in Sources */,
+				2FB3FA9F28A3137900435D5E /* Draw.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
