@@ -133,6 +133,9 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="35"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="playAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nMu-l8-TYS"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -146,6 +149,10 @@
                             <constraint firstItem="vc3-67-1bu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="p1E-sy-v6t"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="playButton" destination="zsr-Af-3ku" id="rz8-pz-5bw"/>
+                        <outlet property="stackView" destination="O03-PL-JsX" id="dcs-sK-rO4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
